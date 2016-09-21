@@ -20,6 +20,7 @@
 		927D6EE91D9139A50066D7BC /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927D6EE81D9139A50066D7BC /* InterfaceController.m */; };
 		927D6EEC1D9139A50066D7BC /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 927D6EEB1D9139A50066D7BC /* ExtensionDelegate.m */; };
 		927D6EEE1D9139A50066D7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927D6EED1D9139A50066D7BC /* Assets.xcassets */; };
+		92DC980D1D914156004FE49A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DC980C1D914156004FE49A /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		927D6EEB1D9139A50066D7BC /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		927D6EED1D9139A50066D7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		927D6EEF1D9139A50066D7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927D6EFE1D913B4C0066D7BC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		92DC980C1D914156004FE49A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DC980D1D914156004FE49A /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +117,7 @@
 				927D6ED71D9139A50066D7BC /* GyroDataTest WatchKit App */,
 				927D6EE61D9139A50066D7BC /* GyroDataTest WatchKit Extension */,
 				927D6EBD1D9139A50066D7BC /* Products */,
+				927D6EFD1D913B4B0066D7BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +176,15 @@
 				927D6EEF1D9139A50066D7BC /* Info.plist */,
 			);
 			path = "GyroDataTest WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		927D6EFD1D913B4B0066D7BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DC980C1D914156004FE49A /* CoreMotion.framework */,
+				927D6EFE1D913B4C0066D7BC /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +579,7 @@
 				927D6EF41D9139A50066D7BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		927D6EF61D9139A50066D7BC /* Build configuration list for PBXNativeTarget "GyroDataTest WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +588,7 @@
 				927D6EF81D9139A50066D7BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		927D6EFA1D9139A50066D7BC /* Build configuration list for PBXNativeTarget "GyroDataTest" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +597,7 @@
 				927D6EFC1D9139A50066D7BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

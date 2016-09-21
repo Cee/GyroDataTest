@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8ez-6p-Auj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="rGD-o9-xEn">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="8ez-6p-Auj" customClass="InterfaceController" customModule="GyroDataTest_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="26.5" alignment="left" text="Label" textAlignment="center" id="VSn-G4-zfo"/>
+                        <group width="1" height="100" alignment="left" id="PbQ-DX-ncH">
+                            <items>
+                                <picker width="0.29999999999999999" height="100" alignment="left" style="sequence" indicatorMode="shownWhileFocused" id="UJL-OF-kyr"/>
+                                <picker width="0.29999999999999999" height="100" alignment="center" style="sequence" id="Quy-9Q-h3w"/>
+                                <picker width="40" height="100" alignment="right" style="sequence" id="apg-9E-vJG"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="VSn-G4-zfo" id="Nkn-z9-n20"/>
+                        <outlet property="xPicker" destination="UJL-OF-kyr" id="nL4-kN-pbf"/>
+                        <outlet property="yPicker" destination="Quy-9Q-h3w" id="3ve-bt-d1h"/>
+                        <outlet property="zPicker" destination="apg-9E-vJG" id="S6m-Xh-UcC"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="885" y="645"/>
         </scene>
     </scenes>
 </document>
